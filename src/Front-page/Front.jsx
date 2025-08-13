@@ -1,0 +1,31 @@
+import React from 'react'
+import './Front.css'
+import anj from '../assets/anj.png'
+
+const Front = () => {
+  return (
+    <div>
+        <div className="front-container">
+            <p className="header">A girl with big eyes and big dreams</p>
+            <div className="photo">
+                    <img src={anj} alt="" className="anj-foto" />
+                </div>
+            <div className="front-parts">
+                <div className="name">
+                    <h1 className="anj">ANJALI <br></br>MANI AK</h1>
+                </div>
+                
+                <div className="domain">
+                    <p className="para">Happily making pretty things that work. Sometimes it’s design, sometimes it’s code—most days, it’s both.</p>
+                    <h3 className="fullstack">FULL STACK DEVELOPER</h3>
+                    <h3 className="uiux">UI/UX DESIGNER</h3>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+  )
+}
+
+export default Front

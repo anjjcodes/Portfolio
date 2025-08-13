@@ -1,8 +1,12 @@
+import Front from "./Front-page/Front"
 
 function App() {
   
   return(
-    <p>Hi LOSER</p>
+    <>
+    <Front/>
+    
+    </>
   )
 }
 

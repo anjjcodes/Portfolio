@@ -1,0 +1,67 @@
+.front-container{
+    background-image: url('../assets/bg.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+    height: 729px;
+
+
+}
+.header{
+    margin-top: 0;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Over the Rainbow';
+}
+.photo{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+.anj-foto{
+    width: 120%;
+}
+.front-parts{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-right: 5%;
+}
+.anj{
+    font-family: 'Le Jour';
+    font-size: 120px;
+    position: absolute;
+    line-height: 130px;
+}
+
+.para{
+    font-size: 23px;
+    justify-items: normal;
+    margin-left: 65%;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.domain{
+    margin-top: 5%;
+}
+.fullstack, .uiux{
+    display: inline-block;
+    min-width: 340px;
+    margin-left: 65%;
+    font-size: 25px;
+    border: none;
+    background-color: #357a81;
+    text-align: center;
+    padding: 8px 15px;
+    font-family: 'The Seasons';
+
+}
+.fullstack{
+    margin-bottom: -60px;
+}

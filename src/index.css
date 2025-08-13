@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'The Seasons';
+    src: url('../Fontspring-DEMO-theseasons-reg.woff2');
+}
+
+@font-face {
+    font-family: 'Over the Rainbow';
+    src: url('../OvertheRainbow.woff');
+}
+@font-face {
+    font-family: 'Le Jour';
+    src: url('../LeJourSerif.woff2');
+}
