@@ -1,68 +1,118 @@
-.front-container{
+.front-container {
     background-image: url('../assets/bg.png');
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin-top: 0;
-    height: 729px;
-
-
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.header{
-    margin-top: 0;
+
+
+.header {
+    margin-top: -100px;
     text-align: center;
     font-size: 25px;
     font-family: 'Over the Rainbow';
     color: white;
 }
-.photo{
+
+
+.photo {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    
+}
 
+.anj-foto {
+    width: 130%;
+    max-width: 540px; /* prevents it from becoming too big on huge screens */
 }
-.anj-foto{
-    width: 120%;
-}
-.front-parts{
+
+/* Main layout */
+.front-parts {
     display: flex;
     justify-content: space-between;
-    margin-top: 7%;
+    align-items: flex-start;
+    margin-top: 5%;
     margin-left: 7%;
     margin-right: 5%;
-}
-.anj{
-    font-family: 'Le Jour';
-    font-size: 120px;
-    position: absolute;
-    line-height: 130px;
+    flex-wrap: wrap; /* helps on smaller screens */
 }
 
-.para{
-    font-size: 23px;
-    justify-items: normal;
-    margin-left: 65%;
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+/* Big name text */
+.anj {
+    font-family: 'Le Jour';
+    font-size: 120px;
+    line-height: 130px;
+    white-space: nowrap; /* keeps MANI AK in one line */
 }
-.domain{
+
+/* Paragraph text */
+.para {
+    font-size: 23px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 400px;
+}
+
+/* Job title buttons */
+.domain {
     margin-top: 5%;
 }
-.fullstack, .uiux{
-    display: inline-block;
+
+.fullstack, .uiux {
+    display: block;
     min-width: 340px;
-    margin-left: 65%;
     font-size: 25px;
     border: none;
     background-color: #357a81;
     text-align: center;
     padding: 8px 15px;
     font-family: 'The Seasons';
-
+ 
 }
-.fullstack{
-    margin-bottom: -60px;
+
+.fullstack {
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 1200px) {
+    .anj {
+        font-size: 90px;
+        line-height: 100px;
+    }
+    .para, .fullstack, .uiux {
+        margin-left: 0;
+    }
+    .front-parts {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .anj {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .anj {
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .anj-foto {
+        width: 90%;
+    }
+    .para {
+        font-size: 18px;
+    }
+    .fullstack, .uiux {
+        min-width: auto;
+        width: 80%;
+    }
 }
