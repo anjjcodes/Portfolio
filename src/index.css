@@ -16,4 +16,14 @@ body{
     font-family: 'Le Jour';
     src: url('../LeJourSerif.woff2');
     font-weight: 1000;
+    
+}
+
+@font-face {
+    font-family: 'TT BlueScreen' ;
+    src: url('../ttblue.woff2');
+}
+@font-face {
+    font-family: Poppins;
+    src: url('../Poppins.woff2');
 }

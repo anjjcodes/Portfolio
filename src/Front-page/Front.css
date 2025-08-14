@@ -1,6 +1,7 @@
 .front-container {
+    position: relative;
     background-image: url('../assets/bg.png');
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -9,6 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 1;
 }
 
 
@@ -30,10 +32,10 @@
 
 .anj-foto {
     width: 500px;
-    max-width: 650px; /* prevents it from becoming too big on huge screens */
+    max-width: 650px; 
 }
 
-/* Main layout */
+
 .front-parts {
     display: flex;
     justify-content: space-between;
@@ -41,18 +43,17 @@
     margin-top: 5%;
     margin-left: 7%;
     margin-right: 5%;
-    flex-wrap: wrap; /* helps on smaller screens */
+    flex-wrap: wrap; 
 }
 
-/* Big name text */
 .anj {
     font-family: 'Le Jour';
     font-size: 120px;
     line-height: 130px;
-    white-space: nowrap; /* keeps MANI AK in one line */
+    white-space: nowrap; 
 }
 
-/* Paragraph text */
+
 .para {
     font-size: 23px;
     color: white;
@@ -60,7 +61,7 @@
     max-width: 400px;
 }
 
-/* Job title buttons */
+
 .domain {
     margin-top: 5%;
 }
@@ -81,7 +82,6 @@
     margin-bottom: 15px;
 }
 
-/* RESPONSIVE FIXES */
 @media (max-width: 1200px) {
     .anj {
         font-size: 90px;
