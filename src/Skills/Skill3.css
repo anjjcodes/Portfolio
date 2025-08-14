@@ -1,0 +1,43 @@
+.skill3-container{
+    position: relative;
+    background-image: url('../assets/skills-bg.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+ 
+}
+.skill-flex{
+    display: flex;
+    gap: 50px;
+    margin: 30px auto;
+    margin-top: -100px;
+
+}
+.tool-h4,.version-h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    font-family: Poppins;
+}
+.tools-grid, .version-grid{
+    margin: 30px auto;   
+    width: 480px;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    border: 1px solid white;
+}
+.tool-items, .version-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    border: 1px solid white;
+}
