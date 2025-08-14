@@ -29,8 +29,8 @@
 }
 
 .anj-foto {
-    width: 130%;
-    max-width: 540px; /* prevents it from becoming too big on huge screens */
+    width: 500px;
+    max-width: 650px; /* prevents it from becoming too big on huge screens */
 }
 
 /* Main layout */

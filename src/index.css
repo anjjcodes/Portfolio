@@ -15,4 +15,5 @@ body{
 @font-face {
     font-family: 'Le Jour';
     src: url('../LeJourSerif.woff2');
+    font-weight: 1000;
 }
