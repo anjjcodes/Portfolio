@@ -1,0 +1,60 @@
+.contact-container{
+    position: relative;
+    background-image: url('../assets/contact-bg.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: flex-end;
+  
+    
+ 
+}
+.anj-img{
+    bottom: 0;
+    z-index: 0;
+    left: 0;
+    position: absolute;
+    
+    
+}
+.contact-anj{
+    width: min(50vw, 90vh);
+    max-width: 700px; 
+    min-width: 350px;
+}
+.c-details{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    padding-left: 5%;
+    
+}
+.contact{
+    font-family: "TT BlueScreen";
+    color: white;
+    font-size: 150px;
+    letter-spacing: 5px;
+    bottom: 0;
+    
+}
+.each-link{
+    display: flex;
+    gap:10px;
+
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    
+}
+.link{
+    font-size: 15px;
+    font-family: Poppins;
+    color: white;
+    font-weight: 1000;
+    margin-top: 10px;
+}
