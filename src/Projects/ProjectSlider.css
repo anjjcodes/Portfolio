@@ -6,41 +6,48 @@
     background-size: cover;
     background-attachment: fixed;
     margin-top: 0;
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;
+    overflow: hidden;
+  
     
-   
+}
+
+.slider-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    
+  
 }
 .each-proj{
+    flex: 0 0 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
-    width: 350px;
+    margin-top: 0
+   
 }
 .proj-img{
-    max-width:50%;
-    min-width: 30%;
+    width: 100%;
+    height: auto;
 
 }
 .proj-desc{
     color: white;
-    font-size: 20px;
-    margin: 30px auto;
-    max-width: 50%;
+    font-size: 17px;
+    max-width: 100%;
     min-width: 30%;
     text-align: justify;
     font-family: Poppins;
+    font-weight: 500;
+
 }
 .projects-container{
     text-align: center;
     font-size: 90px;
-    font-family: "TT BlueScreen";
-    line-height: 1;
+    margin: 6% 10%;
+    align-items: center;
 
 }
 .projects{
@@ -49,4 +56,19 @@
     height: 100%;
     gap: 40px;
     padding-left: 50px;
+}
+.fav{
+    font-size: 50px;
+    align-items: center;
+    font-family: Poppins;
+    color: white;
+    font-weight: 1000;
+
+
+}
+.proj{
+    font-size: 150px;
+    font-family: "TT BlueScreen";
+    bottom: 0;
+    line-height: 0;
 }

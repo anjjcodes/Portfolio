@@ -28,67 +28,86 @@ import cf from '../assets/codeforces.png'
 export const webdevskill = [
   {
     image: html,
+    title : "HTML"
   },
   {
     image: css,
+    title : "CSS"
   },
   {
     image: react,
+    title : "REACT.JS"
   },
   {
     image: node,
+    title : "NODE.JS"
   },
   {
     image: express,
+    title : "EXPRESS.JS"
   },
   {
     image: next,
+    title : "NEXT.JS"
   },
   {
     image: mongodb,
+    title : "MONGODB"
   },
   {
     image: sql,
+    title : "MYSQL"
   },
   {
     image: gsap,
+    title : "GSAP"
   },
   {
     image: tailwind,
+    title : "TAILWIND CSS"
   },
 ];
 export const languages = [
   {
     image: c,
+    title : "C"
   },
   {
     image: cplus,
+    title : "C++"
   },
   {
     image: java,
+    title : "JAVA"
   },
   {
     image: javascr,
+    title : "JAVASCRIPT"
   },
   {
     image: python,
+    title : "PYTHON"
   },
 ];
 export const tools = [
   {
     image: figma,
+    title : "FIGMA"
   },
   {
     image: canva,
+    title : "CANVA"
   },
 ];
 
 export const version = [
   {
     image: git,
+    title : "GIT"
   },
   {
     image: github,
+    title : "GITHUB"
   },
 ];
 

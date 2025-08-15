@@ -12,6 +12,7 @@ const Skill1 = () => {
                 {webdevskill.map((skill,index)=>(
                     <div className="skill-items">
                         <img src={skill.image} alt="" className="each-skill" />
+                        <p className="each-title">{skill.title}</p>
                     </div>
                 ))}
             </div>

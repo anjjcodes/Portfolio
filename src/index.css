@@ -1,7 +1,15 @@
 body{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    
+}
+html,body{
     overflow-x: hidden;
+}
+
+.slider-container{
+    overflow-x: visible;
 }
 @font-face {
     font-family: 'The Seasons';
