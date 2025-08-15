@@ -8,6 +8,9 @@
     margin-top: 0;
     min-height: 100vh;
     display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
     
    
 }
