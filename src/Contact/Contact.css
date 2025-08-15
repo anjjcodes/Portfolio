@@ -9,6 +9,7 @@
     min-height: 100vh; 
     display: flex;
     justify-content: flex-end;
+    align-items: center;
   
     
  
@@ -23,7 +24,7 @@
 }
 .contact-anj{
     width: min(50vw, 90vh);
-    max-width: 700px; 
+    max-width: 800px; 
     min-width: 350px;
 }
 .c-details{
@@ -31,12 +32,14 @@
     flex-direction: column;
     margin-right: 10%;
     padding-left: 5%;
+    max-width: 600px
+;
     
 }
 .contact{
     font-family: "TT BlueScreen";
     color: white;
-    font-size: 150px;
+     font-size: clamp(80px, 10vw, 150px);
     letter-spacing: 5px;
     bottom: 0;
     
@@ -44,15 +47,17 @@
 .each-link{
     display: flex;
     gap:10px;
+    align-items: center;
 
 }
 .icon{
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
     
 }
 .link{
-    font-size: 15px;
+    font-size: clamp(14px, 1.2vw, 18px);
     font-family: Poppins;
     color: white;
     font-weight: 1000;
