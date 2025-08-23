@@ -15,9 +15,12 @@
 
 
 .header {
-    margin-top: -100px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
-    font-size: 25px;
+    font-size: clamp(12px,2vw,25px);
     font-family: 'Over the Rainbow';
     color: white;
 }
@@ -28,12 +31,13 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 .anj-foto {
     width: min(40vw, 70vh);
     max-width: 700px; 
-    min-width: 350px;
+    min-width: 300px;
 }
 
 
@@ -49,14 +53,14 @@
 
 .anj {
     font-family: 'Le Jour';
-    line-height: 130px;
+    line-height: 1.1;
     white-space: nowrap; 
-    font-size: clamp(80px, 10vw, 130px);
+    font-size: clamp(50px, 10vw, 130px);
 }
 
 
 .para {
-    font-size: 23px;
+    font-size: clamp(16px,4vw,23px);
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 400px;
@@ -70,7 +74,7 @@
 .fullstack, .uiux {
     display: block;
     min-width: 340px;
-    font-size: 25px;
+    font-size: clamp(16px,2vw,25px);
     border: none;
     background-color: #357a81;
     text-align: center;
@@ -84,13 +88,7 @@
 }
 
 @media (max-width: 1200px) {
-    .anj {
-        font-size: 90px;
-        line-height: 100px;
-    }
-    .para, .fullstack, .uiux {
-        margin-left: 0;
-    }
+   
     .front-parts {
         flex-direction: column;
         align-items: center;
@@ -102,18 +100,41 @@
 }
 
 @media (max-width: 768px) {
-    .anj {
-        font-size: 70px;
-        line-height: 80px;
+    .anj{
+        font-size: 60px;
+        line-height: 1.1;
+        text-align: center;
+
     }
+   
     .anj-foto {
         width: 90%;
+    
     }
-    .para {
-        font-size: 18px;
+    .para{
+        font-size: 14px;
+        text-align: center;
+        margin-top: -10%;
+    }
+    .front-parts{
+        margin-top: -70%;
     }
     .fullstack, .uiux {
         min-width: auto;
-        width: 80%;
+        width: 50%;
+        font-size: 15px;
+        display: block;
+        align-items: center;
+        margin: 10px auto;
+    }
+     .photo {
+        position: absolute;   
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 110px auto 0;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -1,8 +1,37 @@
 import React from 'react'
 import './Front.css'
 import anj from '../assets/anj.png'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const Front = () => {
+
+    useGSAP(()=>{
+        gsap.from(".anj", {
+            x:-200,
+            opacity:0,
+            duration: 1.5,
+            ease: "back.inOut"
+        })
+        gsap.from(".domain", {
+            x:200,
+            opacity:0,
+            duration: 1.5,
+            ease: "back.inOut"
+
+
+        })
+        gsap.from(".photo", {
+            y:-300,
+            delay: 0.2,
+            opacity:0,
+            duration: 1.5,
+            ease : "back.inOut"
+
+
+        })
+    })
+
   return (
     <div>
         <div className="front-container">
