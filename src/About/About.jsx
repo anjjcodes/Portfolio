@@ -1,7 +1,28 @@
 import React from "react";
 import "./About.css";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+
+  useGSAP(()=>{
+    gsap.from(".about", {
+      y:100,
+      ease: "back.out",
+      duration: 0.8,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".about",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      }
+
+
+    })
+  })
   return (
     <div>
       <div className="about-container">
