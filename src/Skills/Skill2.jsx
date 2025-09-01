@@ -11,6 +11,7 @@ const Skill2 = () => {
                 {languages.map((skills,index)=>(
                     <div className="skill2-items">
                         <img src={skills.image} alt="" className="each-skill" />
+                        <p className="each-title2">{skills.title}</p>
                     </div>
                 ))}
             </div>

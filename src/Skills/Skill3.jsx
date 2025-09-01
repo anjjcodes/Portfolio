@@ -13,6 +13,7 @@ const Skill3 = () => {
               {tools.map((tools, index) => (
                 <div className="tool-items">
                   <img src={tools.image} alt="" className="each-skill" />
+                  <p className="each-title3">{tools.title}</p>
                 </div>
               ))}
             </div>
@@ -23,6 +24,7 @@ const Skill3 = () => {
               {version.map((version, index) => (
                 <div className="version-items">
                   <img src={version.image} alt="" className="each-skill" />
+                  <p className="each-title3">{version.title}</p>
                 </div>
               ))}
             </div>
