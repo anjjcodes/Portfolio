@@ -28,86 +28,106 @@ import cf from '../assets/codeforces.png'
 export const webdevskill = [
   {
     image: html,
-    title : "HTML"
+    title : "HTML",
+    glow : "#E34F26",
   },
   {
     image: css,
-    title : "CSS"
+    title : "CSS",
+    glow: "#1572B6",
   },
   {
     image: react,
-    title : "REACT.JS"
+    title : "REACT.JS",
+    glow : "#61DAFB",
   },
   {
     image: node,
-    title : "NODE.JS"
+    title : "NODE.JS",
+    glow : "#339933",
   },
   {
     image: express,
-    title : "EXPRESS.JS"
+    title : "EXPRESS.JS",
+    glow : "#FFFFFF",
   },
   {
     image: next,
-    title : "NEXT.JS"
+    title : "NEXT.JS",
+    glow: "black"
   },
   {
     image: mongodb,
-    title : "MONGODB"
+    title : "MONGODB",
+    glow: "#47A248",
   },
   {
     image: sql,
-    title : "MYSQL"
+    title : "MYSQL",
+    glow: "#4479A1",
   },
   {
     image: gsap,
-    title : "GSAP"
+    title : "GSAP",
+    glow:"#88CE02",
   },
   {
     image: tailwind,
-    title : "TAILWIND CSS"
+    title : "TAILWIND CSS",
+    glow:"#38B2AC",
   },
 ];
 export const languages = [
   {
     image: c,
-    title : "C"
+    title : "C",
+    glow: "#A8B9CC"
   },
   {
     image: cplus,
-    title : "C++"
+    title : "C++",
+    glow: "#00599C"
   },
   {
     image: java,
-    title : "JAVA"
+    title : "JAVA",
+    glow: "#007396"
   },
   {
     image: javascr,
-    title : "JAVASCRIPT"
+    title : "JAVASCRIPT",
+    glow: "yellow"
+
   },
   {
     image: python,
-    title : "PYTHON"
+    title : "PYTHON",
+    glow:"#3776AB"
   },
 ];
 export const tools = [
   {
     image: figma,
-    title : "FIGMA"
+    title : "FIGMA",
+    glow:"#F24E1E"
   },
   {
     image: canva,
-    title : "CANVA"
+    title : "CANVA",
+    glow:"#00C4CC"
   },
 ];
 
 export const version = [
   {
     image: git,
-    title : "GIT"
+    title : "GIT",
+    glow:"#F05032"
   },
   {
     image: github,
-    title : "GITHUB"
+    title : "GITHUB",
+    glow:"#181717"
   },
 ];
 

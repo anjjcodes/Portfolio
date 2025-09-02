@@ -16,9 +16,9 @@ const Skill1 = () => {
         gsap.from(split.chars,{
             y:-100,
             opacity:0,
-            duration:0.6,
+            duration:0.8,
             ease: "bounce.out",
-            stagger: 0.1,
+            stagger: 0.2,
             scrollTrigger: {
                 trigger: split.chars,
                 start: "top 80%",
@@ -34,7 +34,7 @@ const Skill1 = () => {
             <h4 className="webdev">Web Development</h4>
             <div className="skills-grid">
                 {webdevskill.map((skill,index)=>(
-                    <div className="skill-items">
+                    <div className="skill-items" style={{"--glow": skill.glow}}>
                         <img src={skill.image} alt="" className="each-skill" />
                         <p className="each-title">{skill.title}</p>
                     </div>
