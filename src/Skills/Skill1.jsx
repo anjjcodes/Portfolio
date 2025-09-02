@@ -1,8 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Skill1.css'
 import { webdevskill } from '../assets/assets'
+import { SplitText , ScrollTrigger} from 'gsap/all'
+import gsap from 'gsap'
+
+gsap.registerPlugin(SplitText, ScrollTrigger)
 
 const Skill1 = () => {
+
+    useEffect(() => {
+        const split = new SplitText(".skills", {
+            type: 'chars'
+        })
+
+        gsap.from(split.chars,{
+            y:-100,
+            opacity:0,
+            duration:0.6,
+            ease: "bounce.out",
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: split.chars,
+                start: "top 80%",
+                toggleActions: "play none none reverse",
+
+            }
+        })
+    })
   return (
     <div>
         <div className="skill1-container">
