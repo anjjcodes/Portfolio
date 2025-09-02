@@ -15,7 +15,7 @@ const Contact = () => {
       opacity: 1,
     },
     {
-      x: 50, // overshoot to the right
+      x: 0, // overshoot to the right
       opacity: 1,
       duration: 2,
       ease: "back.out",
