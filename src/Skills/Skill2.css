@@ -53,7 +53,7 @@
     font-weight: 1000;
     transition: opacity 0.3s ;
     text-align: center;
-    top: 45%;
+     top: clamp(48%, 25%, 30%);
     z-index: 1;
     font-size: 20px;
     
