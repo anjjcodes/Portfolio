@@ -6,7 +6,7 @@
     background-size: cover;
     background-attachment: fixed;
     margin-top: 0;
-    min-height: 100dvh; 
+    min-height: 90dvh; 
     display: flex;
     flex-direction: column;
  
@@ -30,7 +30,7 @@
     margin-inline-start: auto;
 }
 .tools-grid, .version-grid{
-    margin: 30px auto;   
+    margin: 20px auto;   
     width: clamp(480px,4vh,200px);  
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -6,7 +6,7 @@
     background-size: cover;
     background-attachment: fixed;
     margin-top: 0;
-    min-height: 100dvh; 
+    min-height: 90dvh; 
     display: flex;
     flex-direction: column;
  
@@ -25,7 +25,7 @@
 
 }
 .skill2-grid{
-    margin: 30px auto;   
+    margin: 20px auto;   
     width: clamp(1000px,4vh,300px);   
     display: grid;
     grid-template-columns: repeat(5, 1fr);
