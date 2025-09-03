@@ -158,7 +158,7 @@ export const projects = [
 export const contact = [
   {
     img : gmail,
-    link : "anjalimani1216@gmail.com"
+    link : "mailto:anjalimani1216@gmail.com"
   },
   {
     img: linkedin,

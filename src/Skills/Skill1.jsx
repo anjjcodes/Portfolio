@@ -17,11 +17,11 @@ const Skill1 = () => {
             y:-100,
             opacity:0,
             duration:0.8,
-            ease: "bounce.out",
+            ease: "back.out",
             stagger: 0.2,
             scrollTrigger: {
                 trigger: split.chars,
-                start: "top 80%",
+                start: "top 90%",
                 toggleActions: "play none none reverse",
 
             }

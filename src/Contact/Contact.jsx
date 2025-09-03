@@ -1,33 +1,40 @@
 import React, { useEffect } from "react";
 import "./Contact.css";
-import anjali from "../assets/anjali.png";
+import anjali from "../assets/anjalii.png";
 import { contact } from "../assets/assets";
 import { useGSAP } from "@gsap/react";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
 const Contact = () => {
-   useGSAP(() => {
-  gsap.fromTo(
-    ".anj-img",
-    {
-      x: -300,
-      opacity: 1,
-    },
-    {
-      x: 0, // overshoot to the right
-      opacity: 1,
-      duration: 2,
-      ease: "back.out",
-      stagger: 0.5,
-      scrollTrigger: {
-        trigger: ".anj-img",
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-      },   
-
-    })
-   })
+  useGSAP(() => {
+    gsap.fromTo(
+      ".anj-img",
+      {
+        x: -300,
+        opacity: 1,
+      },
+      {
+        x: 0, // overshoot to the right
+        opacity: 1,
+        duration: 2,
+        ease: "back.out",
+        stagger: 0.5,
+        scrollTrigger: {
+          trigger: ".anj-img",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+    gsap.to(".icon", {
+      y: 10,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+      duration: 1,
+    });
+  });
   return (
     <div>
       <div className="contact-container">
@@ -36,14 +43,24 @@ const Contact = () => {
         </div>
         <div className="c-details">
           <h1 className="contact">CONTACT</h1>
+          <p className="c-para">
+            I’m always excited to connect with new people! Whether you have an
+            opportunity, want to collaborate, or just want to say hi — feel free
+            to reach out.
+          </p>
           <div className="links">
             {contact.map((ele, index) => (
-              <>
-                <div className="each-link">
-                  <img src={ele.img} alt="" className="icon" />
-                  <p className="link">{ele.link}</p>
-                </div>
-              </>
+              <a
+                key={index} 
+                className="each-link"
+                href={ele.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={ele.name} 
+              >
+                <img src={ele.img} alt={ele.name} className="icon" />{" "}
+               
+              </a>
             ))}
           </div>
         </div>
