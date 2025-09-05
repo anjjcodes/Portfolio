@@ -138,3 +138,6 @@
         align-items: center;
     }
 }
+.letter {
+  display: inline-block;
+}

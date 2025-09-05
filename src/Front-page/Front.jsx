@@ -43,6 +43,9 @@ const Front = () => {
   });
   });
 
+
+
+
   return (
     <div>
       <div className="front-container">
@@ -53,8 +56,8 @@ const Front = () => {
         <div className="front-parts">
           <div className="name">
             <h1 className="anj">
-              ANJALI <br></br>MANI AK
-            </h1>
+ ANJALI <br></br>MANI AK
+</h1>
           </div>
 
           <div className="domain">

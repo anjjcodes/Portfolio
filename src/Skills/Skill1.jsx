@@ -21,7 +21,7 @@ const Skill1 = () => {
             stagger: 0.2,
             scrollTrigger: {
                 trigger: split.chars,
-                start: "top 90%",
+                start: "top 70%",
                 toggleActions: "play none none reverse",
 
             }

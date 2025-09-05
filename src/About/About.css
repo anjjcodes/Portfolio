@@ -42,3 +42,7 @@
     text-align: justify;
 
 }
+.word {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./About.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -36,8 +36,33 @@ const About = () => {
       toggleActions: "play none none reverse"
     }
   })
-    
+
   });
+
+  useEffect(() => {
+  const para = document.querySelector(".ab-p");
+  if (!para) return;
+
+  
+  const words = para.innerText.split(" ");
+  para.innerHTML = words.map((w) => `<span class="word">${w}</span>`).join(" ");
+
+  
+  gsap.utils.toArray(".word").forEach((word) => {
+    word.addEventListener("mouseenter", () => {
+      gsap.to(word, {
+        y: -10,
+        scale: 1.2,
+        duration: 0.3,
+        yoyo: true,
+        repeat: 1,
+        ease: "back.out(2)",
+      });
+    });
+  });
+}, []);
+
+
   return (
     <div>
       <div className="about-container">
