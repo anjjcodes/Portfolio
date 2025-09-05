@@ -49,9 +49,14 @@ const ProjectSlider = () => {
                 <p className="p-tech">
                   <strong>Tech Stack</strong> : {ele.tech}
                 </p>
-                <p className="p-git">
-                  <strong>Github</strong> : {ele.git}
-                </p>
+                <button className="git">
+                  Github
+                  <span className="star"></span>
+                  <span className="star"></span>
+                  <span className="star"></span>
+
+                </button>
+      
               </div>
             </div>
           ))}

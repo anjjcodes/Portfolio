@@ -1,4 +1,5 @@
 body{
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23000" d="M4.5.79v22.42l6.56-6.57h9.29L4.5.79z"></path></svg>') 12 12, auto;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
