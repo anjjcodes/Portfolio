@@ -31,7 +31,9 @@ const ProjectSlider = () => {
       <div className="slider-wrapper" ref={containerRed}>
         <div className="projects-container">
           <h1 className="proj">PROJECTS</h1>
-          <h4 className="fav">MY FAVS ★</h4>
+          <p className="fav">
+            Some of my favorite works that shows how i think, design and build
+          </p>
         </div>
         <div className="projects">
           {projects.map((ele, index) => (

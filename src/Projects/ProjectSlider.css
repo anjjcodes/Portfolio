@@ -1,6 +1,6 @@
 .slider-container{
     position: relative;
-    background-image: url('../assets/projects-bg.png');
+    background-image: url('../assets/proj-bg.png');
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,9 +44,15 @@
 
 }
 .projects-container{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     font-size: 90px;
-    margin: 6% 10%;
+    margin-left:6%;
+    padding-right: 5%;
     align-items: center;
 
 }
@@ -58,17 +64,18 @@
     padding-left: 50px;
 }
 .fav{
-    font-size: 50px;
-    align-items: center;
-    font-family: Poppins;
+    font-size: clamp(16px,4vw,23px);
     color: white;
-    font-weight: 1000;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin-top: -5%;
 
 }
 .proj{
-    font-size: 150px;
-    font-family: "TT BlueScreen";
+    position: relative;
     bottom: 0;
+    font-size: clamp(60px, 10vw, 180px); 
+    font-family: "TT BlueScreen";
     line-height: 0;
+    color: white;
 }
