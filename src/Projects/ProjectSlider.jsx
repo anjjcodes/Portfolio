@@ -70,7 +70,7 @@ const ProjectSlider = () => {
             <span className="split">S</span>
           </h1>
           <p className="fav">
-            Some of my favorite works that shows how i think, design and build
+            Some of my favorite works that shows how I think, design and build
           </p>
         </div>
         <div className="projects">

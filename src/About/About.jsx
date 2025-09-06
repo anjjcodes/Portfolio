@@ -84,16 +84,16 @@ const About = () => {
           </div>
           <div className="about-desc">
             <p className="ab-p">
-              Hello, I’m Anjali, a 3rd-year Computer Science at SSN College of
+              Hello, I’m Anjali, a 3rd-year Computer Science Student at SSN College of
               Engineering. I’m a Full Stack Developer and a UI/UX Designer. I
               love making things look pretty and aesthetic and also to fix codes
               which gives me side-eye. I love technology and anything related to
               it. I’m always making my own sites, fixing each and every
               imperfect font to the perfect font, and giving life to every
               colour. Beyond the screen, I’m a romance and fiction reader who
-              loves getting lost in heartfelt stories and imaginary worlds.So if
+              loves getting lost in heartfelt stories and imaginary worlds. So if
               you ever see me staring im probably thinking about my site or my
-              fictioanl charecter
+              fictional charecter.
             </p>
           </div>
         </div>
