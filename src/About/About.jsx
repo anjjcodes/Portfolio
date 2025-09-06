@@ -92,7 +92,7 @@ const About = () => {
               imperfect font to the perfect font, and giving life to every
               colour. Beyond the screen, I’m a romance and fiction reader who
               loves getting lost in heartfelt stories and imaginary worlds. So if
-              you ever see me staring im probably thinking about my site or my
+              you ever see me staring I'm probably thinking about my site or my
               fictional charecter.
             </p>
           </div>
