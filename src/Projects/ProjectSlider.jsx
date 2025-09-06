@@ -13,7 +13,8 @@ const ProjectSlider = () => {
   const containerRed = useRef(null);
   const textRef = useRef(null);
   useGSAP(() => {
-    const totwodth = sliderRef.current.scrollWidth - window.innerWidth;
+    const totwodth = containerRed.current.scrollWidth - window.innerWidth + 50;
+
     gsap.to(containerRed.current, {
       x: -totwodth,
       ease: "none",
@@ -77,12 +78,12 @@ const ProjectSlider = () => {
                 <p className="p-tech">
                   <strong>Tech Stack</strong> : {ele.tech}
                 </p>
-                <button className="git">
+                <a href = {ele.git}>
+                  <button className="git">
                   Github
-                  <span className="star"></span>
-                  <span className="star"></span>
-                  <span className="star"></span>
                 </button>
+                </a>
+                
               </div>
             </div>
           ))}

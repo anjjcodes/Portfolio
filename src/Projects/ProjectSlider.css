@@ -16,11 +16,13 @@
 .slider-wrapper{
     display: flex;
     flex-wrap: nowrap;
+    width: max-content;
     
   
 }
 .each-proj{
-    flex: 0 0 50vw;
+    flex: 0 0 auto;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;

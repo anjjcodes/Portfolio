@@ -142,16 +142,16 @@ export const projects = [
   {
     image: spylt,
     title: "Spylt-Delicous Drink Site",
-    desc: "A beautifully designed, fully functional online platform offering a seamless café experience. Enjoy an elegant UI/UX with intuitive navigation, quick ordering, and smooth delivery tracking, all wrapped in a calming lavender aesthetic.",
-    tech : "React.js, Css, Nodejs, Mongodb",
-    git : "https://github.com/anjjcodes/Cafe-Site",
+    desc: "This is a delicious drink website built using GSAP. Working on it taught me a lot about GSAP, and even though I didn’t create the design, it played a big role in my development journey.",
+    tech : "React.js, GSAP, Tailwind CSS",
+    git : "https://github.com/anjjcodes/Spylt",
   },
   {
     image: book,
     title: "My Bookspace",
-    desc: "A beautifully designed, fully functional online platform offering a seamless café experience. Enjoy an elegant UI/UX with intuitive navigation, quick ordering, and smooth delivery tracking, all wrapped in a calming lavender aesthetic.",
-    tech : "React.js, Css, Nodejs, Mongodb",
-    git : "https://github.com/anjjcodes/Cafe-Site",
+    desc: "This site is very close to my heart. It showcases all the books I’ve read and my favorites among them, forming a personal collection. The design is completely mine",
+    tech : "React.js, Css",
+    git : "https://github.com/anjjcodes/BookSpace",
   },
 ];
 
@@ -166,7 +166,7 @@ export const contact = [
   },
   {
     img: github,
-    link: "https://github.com/anjalimaniak"
+    link: "https://github.com/anjjcodes"
   },
   {
     img: cf,

@@ -28,7 +28,7 @@ const Front = () => {
       ease: "back.inOut",
     });
     gsap.to(".fullstack", {
-    y: 10,                
+    y: 10,               
     repeat: -1,           
     yoyo: true,          
     ease: "sine.inOut",   

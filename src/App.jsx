@@ -1,3 +1,4 @@
+import { use, useEffect } from "react"
 import About from "./About/About"
 import Contact from "./Contact/Contact"
 import Front from "./Front-page/Front"
@@ -7,6 +8,7 @@ import Skill2 from "./Skills/Skill2"
 import Skill3 from "./Skills/Skill3"
 
 function App() {
+
   
   return(
     <>
