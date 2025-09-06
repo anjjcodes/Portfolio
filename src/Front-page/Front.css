@@ -141,3 +141,6 @@
 .letter {
   display: inline-block;
 }
+.magnetic{
+    cursor: grab;
+}

@@ -69,12 +69,14 @@ const About = () => {
       });
     });
   });
+
 }, []);
 
 
 
   return (
     <div>
+      
       <div className="about-container">
         <div className="about-parts">
           <div className="about-title">

@@ -44,6 +44,15 @@ const ProjectSlider = () => {
         toggleActions: "play none none reverse",
       },
     });
+    gsap.to(".each-proj", {
+  y: 10,
+  repeat: -1,
+  yoyo: true,
+  ease: "sine.inOut",
+  duration: 2,
+  stagger:0.05 ,
+});
+
   }, []);
 
   return (
