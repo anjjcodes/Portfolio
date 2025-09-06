@@ -25,7 +25,7 @@ const Skill1 = () => {
         ease: "sine.out",
         scrollTrigger: {
           trigger: skillEl,
-          start: "top 80%",
+          start: "top 90%",
           toggleActions: "play none none reverse",
         }
       }

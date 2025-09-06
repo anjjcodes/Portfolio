@@ -43,24 +43,34 @@ const About = () => {
   const para = document.querySelector(".ab-p");
   if (!para) return;
 
-  
   const words = para.innerText.split(" ");
   para.innerHTML = words.map((w) => `<span class="word">${w}</span>`).join(" ");
 
-  
   gsap.utils.toArray(".word").forEach((word) => {
     word.addEventListener("mouseenter", () => {
+      gsap.killTweensOf(word);
+
       gsap.to(word, {
         y: -10,
         scale: 1.2,
-        duration: 0.2,
-        yoyo: true,
-        repeat: 1,
+        duration: 0.02,
         ease: "back.out",
+      });
+    });
+
+    word.addEventListener("mouseleave", () => {
+      gsap.killTweensOf(word);
+
+      gsap.to(word, {
+        y: 0,
+        scale: 1,
+        duration: 0.3,
+        ease: "sine.inOut",
       });
     });
   });
 }, []);
+
 
 
   return (
