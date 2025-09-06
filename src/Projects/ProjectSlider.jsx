@@ -13,7 +13,7 @@ const ProjectSlider = () => {
   const containerRed = useRef(null);
   const textRef = useRef(null);
   useGSAP(() => {
-    const totwodth = containerRed.current.scrollWidth - window.innerWidth + 50;
+    const totwodth = containerRed.current.scrollWidth - window.innerWidth;
 
     gsap.to(containerRed.current, {
       x: -totwodth,
