@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const ProjectSlider = () => {
   const sliderRef = useRef(null);
   const containerRed = useRef(null);
-
+  const textRef = useRef(null);
   useGSAP(() => {
     const totwodth = sliderRef.current.scrollWidth - window.innerWidth;
     gsap.to(containerRed.current, {
@@ -24,13 +24,15 @@ const ProjectSlider = () => {
         pin: true,
       },
     });
-  });
+
+   
+  }, []);
 
   return (
     <section className="slider-container" ref={sliderRef}>
       <div className="slider-wrapper" ref={containerRed}>
         <div className="projects-container">
-          <h1 className="proj">PROJECTS</h1>
+          <h1 className="proj" ref={textRef}>PROJECTS</h1>
           <p className="fav">
             Some of my favorite works that shows how i think, design and build
           </p>

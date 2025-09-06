@@ -41,6 +41,9 @@ const Front = () => {
     ease: "sine.inOut",   
     duration: 1           
   });
+
+ 
+
   });
 
 
@@ -65,8 +68,8 @@ const Front = () => {
               Happily making pretty things that work. Sometimes it’s design,
               sometimes it’s code—most days, it’s both.
             </p>
-            <h3 className="fullstack">FULL STACK DEVELOPER</h3>
-            <h3 className="uiux">UI/UX DESIGNER</h3>
+            <h3 className="fullstack magnetic">FULL STACK DEVELOPER</h3>
+            <h3 className="uiux magnetic">UI/UX DESIGNER</h3>
           </div>
         </div>
       </div>

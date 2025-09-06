@@ -1,12 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect , useRef} from "react";
 import "./Contact.css";
 import anjali from "../assets/anjalii.png";
 import { contact } from "../assets/assets";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import SplitType from "split-type";
 
 const Contact = () => {
+  const textRef = useRef(null);
   useGSAP(() => {
     gsap.fromTo(
       ".anj-img",
@@ -34,6 +36,25 @@ const Contact = () => {
       ease: "sine.inOut",
       duration: 1,
     });
+    const split = new SplitType(textRef.current, {
+      types:"chars"
+    })
+
+    gsap.from(split.chars,{
+      scrollTrigger: {
+        trigger: textRef.current,
+        start: "top 100%",
+        end: "top 30%",
+        scrub: true,
+      },
+      x:() => gsap.utils.random(-300, 300),
+      y: () => gsap.utils.random(-300,300),
+      opacity: 0,
+      scale: 0,
+      duration: 0.5,
+      stagger: 0.05,
+      ease: "sine.out"
+    })
   });
   return (
     <div>
@@ -42,7 +63,7 @@ const Contact = () => {
           <img src={anjali} alt="" className="contact-anj" />
         </div>
         <div className="c-details">
-          <h1 className="contact">CONTACT</h1>
+          <h1 className="contact" ref= {textRef}>CONTACT</h1>
           <p className="c-para">
             I’m always excited to connect with new people! Whether you have an
             opportunity, want to collaborate, or just want to say hi — feel free

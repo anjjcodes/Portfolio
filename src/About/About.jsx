@@ -53,10 +53,10 @@ const About = () => {
       gsap.to(word, {
         y: -10,
         scale: 1.2,
-        duration: 0.3,
+        duration: 0.2,
         yoyo: true,
         repeat: 1,
-        ease: "back.out(2)",
+        ease: "back.out",
       });
     });
   });
